@@ -7,6 +7,8 @@ import { TopNavComponent } from './subcomponents/top-nav/top-nav.component';
 import { FooterComponent } from './subcomponents/footer/footer.component';
 import { HomeComponent } from './pages/home/home.component';
 import { ViewMainImageComponent } from './modals/view-main-image/view-main-image.component';
+import { ViewPartComponent } from './pages/view-part/view-part.component';
+import { SlidingCartComponent } from './subcomponents/sliding-cart/sliding-cart.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +16,9 @@ import { ViewMainImageComponent } from './modals/view-main-image/view-main-image
     TopNavComponent,
     FooterComponent,
     HomeComponent,
-    ViewMainImageComponent
+    ViewMainImageComponent,
+    ViewPartComponent,
+    SlidingCartComponent
   ],
   imports: [
     BrowserModule,
