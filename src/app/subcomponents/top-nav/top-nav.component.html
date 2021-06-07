@@ -1,4 +1,6 @@
-<nav class="navbar is-justify-content-space-between" role="navigation" aria-label="main navigation">
+<nav class="navbar is-justify-content-space-between" role="navigation" aria-label="main navigation"
+  [ngClass]="{'not-home': !isHome}"
+>
     <div class="navbar-brand">
       <a class="navbar-item" href="https://bulma.io">
         <!-- <img src="https://bulma.io/images/bulma-logo.png" width="112" height="28"> -->

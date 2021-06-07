@@ -2,6 +2,13 @@
     margin-left: 20px;
 }
 
+.navbar {
+    &.not-home {
+        box-shadow:  2px 2px 9px #d3d3d3,
+        -2px -2px 9px #ededed;
+    }
+}
+
 .navbar-menu {
     margin-right: 20px;
 }
