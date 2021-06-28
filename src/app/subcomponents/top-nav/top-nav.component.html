@@ -49,7 +49,7 @@
             <a class="button is-light">
                 <strong>Sign up</strong>
               </a>
-            <a class="button is-light">
+            <a class="button is-light" (click)="toggleLogin()">
               Log in
             </a>
           </div>
@@ -57,3 +57,4 @@
       </div>
     </div>
   </nav>
+  <app-login [opened] = "loginOpened"></app-login>

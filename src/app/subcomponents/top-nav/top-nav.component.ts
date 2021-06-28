@@ -7,6 +7,7 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class TopNavComponent implements OnInit {
 
+  loginOpened = true;
   @Input() isHome: boolean;
   constructor() { }
 
@@ -18,6 +19,10 @@ export class TopNavComponent implements OnInit {
     const menu = document.querySelector('.navbar-menu');
     burger.classList.toggle('is-active');
     menu.classList.toggle('is-active');
+  }
+
+  toggleLogin() {
+    this.loginOpened = !this.loginOpened;
   }
 
 }

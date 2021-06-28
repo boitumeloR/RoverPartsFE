@@ -1,7 +1,18 @@
 <div class="modal">
     <div class="modal-background"></div>
     <div class="modal-content">
-      <!-- Any other Bulma elements you want -->
+        <div class="modal-card">
+            <section class="modal-card-body">
+              <!-- Content ... -->
+              <h1 class="title">Login</h1>
+              <input class="input is-primary" type="text" placeholder="Email Addresss">
+              <input class="input is-primary" type="password" placeholder="Password">
+              <button class="button is-info is-fullwidth">Login </button>
+              <hr class="navbar-divider">
+              <h2 style="text-align: center;">OR</h2>
+              <button class="button is-primary is-fullwidth">Login With Google</button>
+            </section>
+          </div>
     </div>
-    <button class="modal-close is-large" aria-label="close"></button>
-  </div>
+    <button class="modal-close is-large" aria-label="close" (click)="toggleModal()"></button>
+</div>
