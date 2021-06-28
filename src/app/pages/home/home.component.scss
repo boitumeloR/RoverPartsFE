@@ -81,3 +81,22 @@
     background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ), url('../../../assets/new-defender.jpeg');
     animation-delay: 12s;
   }
+
+
+  .cen {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+  }
+  .back {
+    text-align: center;
+    width: 60%;
+    height: 20rem;
+    margin: 0 auto;
+    background: -webkit-linear-gradient(to right, #2b5876, #4e4376); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #2b5876, #4e4376);
+    border-radius: 70% 30% 30% 70% / 60% 40% 60% 40%;
+      img {
+          width: 20rem;
+      }
+  }

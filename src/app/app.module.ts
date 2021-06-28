@@ -9,6 +9,7 @@ import { HomeComponent } from './pages/home/home.component';
 import { ViewMainImageComponent } from './modals/view-main-image/view-main-image.component';
 import { ViewPartComponent } from './pages/view-part/view-part.component';
 import { SlidingCartComponent } from './subcomponents/sliding-cart/sliding-cart.component';
+import { ShopComponent } from './pages/shop/shop.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { SlidingCartComponent } from './subcomponents/sliding-cart/sliding-cart.
     HomeComponent,
     ViewMainImageComponent,
     ViewPartComponent,
-    SlidingCartComponent
+    SlidingCartComponent,
+    ShopComponent
   ],
   imports: [
     BrowserModule,
