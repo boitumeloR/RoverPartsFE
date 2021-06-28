@@ -3,3 +3,81 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
+.carousel {
+    width: 100%;
+    height: 100vh;
+    box-sizing: border-box;
+
+    .hero-body {
+        position: absolute;
+        z-index: 1000;
+        top: 40vh;
+    }
+  }
+  
+  .viewport {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background-color: black;
+  }
+  
+  .slide-container {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    color: #fff
+  }
+  
+  .slide-container > div {
+    width: 100%;
+    height: 100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    animation-name: swipe;
+    animation-duration: 12s; /* 5 * number of slides. */
+    animation-iteration-count: infinite;
+    animation-timing-function: cubic-bezier(1, 0, 0, 1);
+    z-index: 1;
+    position: absolute;
+    background-color: white;
+  }
+
+  @keyframes 
+  swipe {  0% {
+   z-index: 1;
+   will-change: width;
+  }
+   15% {
+   width: 0;
+   visibility: hidden;
+  }
+   30% {
+   z-index: 0;
+   width: 100%;
+  }
+   65.9% { /* (Numer of slides * 10) + 36 - 0.1. */
+   z-index: 0;
+   visibility: hidden;
+  }
+   66% { /* (Numer of slides * 10) + 36. */
+   visibility: visible;
+  }
+}
+
+  .slide-1 {
+    background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ), url('../../../assets/land-rover.jpeg');
+    animation-delay: 4s;
+  }
+  
+  .slide-2 {
+    background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ), url('../../../assets/new-defender.jpeg');
+    animation-delay: 8s;
+  }
+  
+  .slide-3 {
+    background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ), url('../../../assets/new-defender.jpeg');
+    animation-delay: 12s;
+  }
