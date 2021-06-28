@@ -7,9 +7,30 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ShopComponent implements OnInit {
 
+  parts = Array(8).fill(0);
+  openedImage = false;
+  addedToCart = false;
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  openImage() {
+    this.openedImage = true;
+  }
+
+  closeImage(passedData: boolean) {
+    console.log(passedData);
+    this.openedImage = false;
+  }
+
+  addToCart(): void {
+    this.addedToCart = !this.addedToCart;
+    console.log(this.addedToCart);
+  }
+
+  closeSide(passedData: boolean) {
+    this.addedToCart = passedData;
   }
 
 }

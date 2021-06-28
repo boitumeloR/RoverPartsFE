@@ -25,7 +25,7 @@
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo voluptate architecto earum, debitis, labore adipisci nihil praesentium velit nam, dicta sed minima rerum obcaecati tempore enim saepe ea cumque necessitatibus?
         </p>
 
-        <button class="button is-primary">Shop For Your Rover's Parts</button>
+        <button class="button is-primary" [routerLink]="[ '/shop' ]">Shop For Your Rover's Parts</button>
       </div>
     </div>
     <div class="viewport">
@@ -46,7 +46,7 @@
 
   <section class="section is-medium">
     <div class="columns">
-      <div class="column">
+      <div class="column is-6">
         <div class="back">
           <img src="assets/off-road.svg" alt="" srcset="">
         </div>
@@ -60,7 +60,7 @@
       </div>
     </div> 
   </section>
-  <section class="section is-medium">
+  <section class="section ">
     <div class="columns">
 
       <div class="column">
@@ -69,42 +69,12 @@
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos, ipsam sint numquam quis nihil eligendi nostrum! Ipsum officia suscipit reiciendis. Doloremque quasi quisquam aliquid doloribus id cum porro sit, delectus perspiciatis ipsum voluptate eius tempora laudantium odit facilis voluptatem quo. Dolorum veniam dignissimos possimus deserunt aut veritatis aperiam maiores dolore.
         </h2>
       </div>
-      <div class="column">
+      <div class="column is-6">
         <div class="back">
-          <img src="assets/off-road.svg" alt="" srcset="">
+          <img src="assets/car.svg" alt="" srcset="">
         </div>
       </div>
     </div> 
-  </section>
-
-  <section class="section">
-    <h1 class="title">Featured Parts</h1>
-    <h2 class="subtitle">
-      Here is a tailored list of our most popular parts!
-    </h2>
-    <!-- Product Cards -->
-    <div class="columns">
-        <div class="card column is-one-fifth">
-            <div class="card-image">
-                <a (click)="openImage()">
-                    <figure class="image is-4by3">
-                        <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
-                    </figure>
-                </a>
-            </div>
-            <div class="card-content">
-              <div class="content">
-                  <h1 class="is-size-two-desktop is-size-two-widescreen is-size-two-fullhd is-size-two-mobile is-size-two-tablet is-size-two-touch">Something Suspension</h1>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam explicabo mollitia voluptates dolorem, nesciunt commodi minus sed vero ab odit?</p>
-                  <h3 class="is-size-three-desktop is-size-three-widescreen is-size-three-fullhd is-size-three-mobile is-size-three-tablet is-size-three-touch">ZAR 200</h3>
-              </div>
-              <div class="is-1">
-                <button class="button is-primary" [routerLink]="[ '/view-part' ]">View Part</button>
-                <button class="button is-light">Add To Cart</button>
-              </div>
-            </div>
-          </div>
-    </div>
   </section>
 
   <app-view-main-image *ngIf="openedImage" (onClose)= "closeImage($event)"></app-view-main-image>

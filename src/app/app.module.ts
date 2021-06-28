@@ -10,6 +10,7 @@ import { ViewMainImageComponent } from './modals/view-main-image/view-main-image
 import { ViewPartComponent } from './pages/view-part/view-part.component';
 import { SlidingCartComponent } from './subcomponents/sliding-cart/sliding-cart.component';
 import { ShopComponent } from './pages/shop/shop.component';
+import { LoginComponent } from './modals/login/login.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { ShopComponent } from './pages/shop/shop.component';
     ViewMainImageComponent,
     ViewPartComponent,
     SlidingCartComponent,
-    ShopComponent
+    ShopComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,

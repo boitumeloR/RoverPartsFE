@@ -6,6 +6,8 @@
     &.not-home {
         box-shadow:  2px 2px 9px #d3d3d3,
         -2px -2px 9px #ededed;
+        position: fixed;
+        width: 100vw;
     }
 }
 

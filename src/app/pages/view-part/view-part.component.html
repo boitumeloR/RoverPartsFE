@@ -1,10 +1,20 @@
 <app-top-nav [isHome] = "false"></app-top-nav>
 <app-sliding-cart [opened]="addedToCart" (onClose) = "closeSide($event)"></app-sliding-cart>
+<section class="hero is-medium is-link image">
+    <div class="hero-body">
+      <p class="title">
+        Something suspension
+      </p>
+      <!-- <p class="subtitle">
+        Medium subtitle
+      </p> -->
+    </div>
+</section>
 <section class="section">
     <nav class="breadcrumb" aria-label="breadcrumbs">
         <ul>
           <li><a href="#">Home</a></li>
-          <li><a href="#">Shop</a></li>
+          <li><a [routerLink]="[ '/shop' ]">Shop</a></li>
           <li class="is-active"><a href="#" aria-current="page">View Product</a></li>
         </ul>
       </nav>
