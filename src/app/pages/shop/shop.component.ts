@@ -20,7 +20,6 @@ export class ShopComponent implements OnInit {
   }
 
   closeImage(passedData: boolean) {
-    console.log(passedData);
     this.openedImage = false;
   }
 

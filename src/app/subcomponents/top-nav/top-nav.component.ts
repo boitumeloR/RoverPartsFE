@@ -7,7 +7,7 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class TopNavComponent implements OnInit {
 
-  loginOpened = true;
+  loginOpened = false;
   @Input() isHome: boolean;
   constructor() { }
 

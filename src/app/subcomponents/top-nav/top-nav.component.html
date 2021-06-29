@@ -57,4 +57,4 @@
       </div>
     </div>
   </nav>
-  <app-login [opened] = "loginOpened"></app-login>
+  <app-login (onCloseLogin) = "toggleLogin()" [opened] = "loginOpened"></app-login>
